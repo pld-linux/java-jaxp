@@ -1,11 +1,11 @@
-Summary: 	Java API for XML Processing
+Summary:	Java API for XML Processing
 Summary(pl):	API Javy do przetwarzania XML
 Name:		jaxp
 Version:	1.1
 Release:	1
 License:	Read License-* files
 Group:		Development/Languages/XML/Java
-Source0:	jaxp-1_1.zip
+Source0:	%{name}-1_1.zip
 URL:		http://java.sun.com/xml/download.html
 Provides:	xalan-j
 Provides:	crimson
