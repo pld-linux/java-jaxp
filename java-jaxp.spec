@@ -1,5 +1,5 @@
 Summary:	Java API for XML Processing
-Summary(pl):	API Javy do przetwarzania XML
+Summary(pl):	API Javy do przetwarzania XML-a
 Name:		jaxp
 Version:	1.1
 Release:	1
@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 JAXP - Java(TM) API for XML Processing.
 
 %description -l pl
-JAXP - API Javy do przetwarzania XML.
+JAXP - API Javy do przetwarzania XML-a.
 
 %package doc
 Summary:	JAXP documentation
