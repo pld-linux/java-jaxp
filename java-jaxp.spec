@@ -17,7 +17,7 @@ Provides:	xalan-j
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_javalibdir	/usr/share/java
+%define		_javalibdir	%{_datadir}/java
 
 %description
 JAXP - Java(TM) API for XML Processing.
