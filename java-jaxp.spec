@@ -1,15 +1,17 @@
-# TODO: back to binary version; SCSL sources are restricted
-# see also http://www.sun.com/software/communitysource/countries.html
+# NOTE: this spec is obsolete: jre 1.4 contains jaxp 1.2.6, jre 1.5 contains 1.3
 Summary:	Java API for XML Processing
 Summary(pl):	API Javy do przetwarzania XML-a
 Name:		jaxp
 Version:	1.2.0
 Release:	1
-License:	restricted, non-distributable (see License* files)
+License:	SCSL
 # base JAXP is on Sun's restricted license (internal use only),
 # DOM bindings are on W3C license (distributable)
 # and the rest is on Apache license (distributable)
 Group:		Development/Languages/XML/Java
+# download from http://www.sun.com/software/communitysource/jaxp/download.html
+# (after registering etc.; note that sources distribution is restricted, see
+#  also http://www.sun.com/software/communitysource/countries.html )
 Source0:	%{name}-1_2_0-scsl.zip
 # NoSource0-md5:	6424d0dc065b63506c9873e78a18869e
 URL:		http://java.sun.com/xml/download.html
