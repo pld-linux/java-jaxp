@@ -1,3 +1,5 @@
+# TODO: back to binary version; SCSL sources are restricted
+# see also http://www.sun.com/software/communitysource/countries.html
 Summary:	Java API for XML Processing
 Summary(pl):	API Javy do przetwarzania XML-a
 Name:		jaxp
@@ -9,7 +11,7 @@ License:	restricted, non-distributable (see License* files)
 # and the rest is on Apache license (distributable)
 Group:		Development/Languages/XML/Java
 Source0:	%{name}-1_2_0-scsl.zip
-# Source0-md5:	6424d0dc065b63506c9873e78a18869e
+# NoSource0-md5:	6424d0dc065b63506c9873e78a18869e
 URL:		http://java.sun.com/xml/download.html
 NoSource:	0
 BuildRequires:	unzip
