@@ -1,4 +1,5 @@
-Summary: 	jaxp
+Summary: 	Java API for XML Processing
+Summary(pl):	API Javy do przetwarzania XML
 Name:		jaxp
 Version:	1.1
 Release:	1
@@ -16,27 +17,32 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_javalibdir	/usr/share/java
 
 %description
-jaxp
+JAXP - Java(TM) API for XML Processing.
+
+%description -l pl
+JAXP - API Javy do przetwarzania XML.
 
 %package doc
+Summary:	JAXP documentation
+Summary(pl):	Dokumentacja do JAXP
 Group:		Development/Languages/XML/Java
 Group(de):	Entwicklung/Sprachen/XML/Java
 Group(pl):	Programowanie/Jêzyki/XML/Java
-Summary:	jaxp documentation
 
 %description doc
-jaxp documentation
+JAXP documentation.
+
+%description doc -l pl
+Dokumentacja do JAXP.
 
 %prep
 %setup -q
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/%{_javalibdir}
-cp *.jar $RPM_BUILD_ROOT/%{_javalibdir}
+install -d $RPM_BUILD_ROOT%{_javalibdir}
+install *.jar $RPM_BUILD_ROOT%{_javalibdir}
 
 gzip -9nf License-ASF *.html
 
@@ -46,7 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%dir %{_javalibdir}
 %{_javalibdir}/*.jar
 
 %files doc
