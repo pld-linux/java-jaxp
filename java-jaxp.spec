@@ -3,12 +3,17 @@ Summary(pl):	API Javy do przetwarzania XML
 Name:		jaxp
 Version:	1.1
 Release:	1
-License:	Apache-like - Read License-* files
+License:	restricted, non-distributable (see License* files)
+# base JAXP is on Sun's restricted license (internal use only),
+# DOM bindings are on W3C license (distributable)
+# and the rest is on Apache license (distributable)
 Group:		Development/Languages/XML/Java
 Source0:	%{name}-1_1.zip
 URL:		http://java.sun.com/xml/download.html
-Provides:	xalan-j
+NoSource:	0
+Requires:	jre >= 1.1.8
 Provides:	crimson
+Provides:	xalan-j
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,14 +45,12 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_javalibdir}
 install *.jar $RPM_BUILD_ROOT%{_javalibdir}
 
-gzip -9nf License-ASF *.html
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc License-ASF *.html
 %{_javalibdir}/*.jar
 
 %files doc
