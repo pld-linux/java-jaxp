@@ -3,7 +3,7 @@ Summary(pl):	API Javy do przetwarzania XML
 Name:		jaxp
 Version:	1.1
 Release:	1
-License:	Read License-* files
+License:	Apache-like - Read License-* files
 Group:		Development/Languages/XML/Java
 Source0:	%{name}-1_1.zip
 URL:		http://java.sun.com/xml/download.html
