@@ -12,6 +12,7 @@ Source0:	%{name}-1_2_0-scsl.zip
 # Source0-md5:	6424d0dc065b63506c9873e78a18869e
 URL:		http://java.sun.com/xml/download.html
 NoSource:	0
+BuildRequires:	unzip
 Requires:	jre >= 1.1.8
 Provides:	crimson
 Provides:	xalan-j
