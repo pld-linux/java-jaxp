@@ -5,8 +5,6 @@ Version:	1.1
 Release:	1
 License:	Read License-* files
 Group:		Development/Languages/XML/Java
-Group(de):	Entwicklung/Sprachen/XML/Java
-Group(pl):	Programowanie/Jêzyki/XML/Java
 Source0:	jaxp-1_1.zip
 URL:		http://java.sun.com/xml/download.html
 Provides:	xalan-j
@@ -26,8 +24,6 @@ JAXP - API Javy do przetwarzania XML.
 Summary:	JAXP documentation
 Summary(pl):	Dokumentacja do JAXP
 Group:		Development/Languages/XML/Java
-Group(de):	Entwicklung/Sprachen/XML/Java
-Group(pl):	Programowanie/Jêzyki/XML/Java
 
 %description doc
 JAXP documentation.
