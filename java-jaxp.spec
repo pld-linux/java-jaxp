@@ -1,6 +1,6 @@
 # NOTE: this spec is obsolete: jre 1.4 contains jaxp 1.2.6, jre 1.5 contains 1.3
 Summary:	Java API for XML Processing
-Summary(pl.UTF-8):   API Javy do przetwarzania XML-a
+Summary(pl.UTF-8):	API Javy do przetwarzania XML-a
 Name:		jaxp
 Version:	1.2.0
 Release:	1
@@ -33,7 +33,7 @@ JAXP - API Javy do przetwarzania XML-a.
 
 %package doc
 Summary:	JAXP documentation
-Summary(pl.UTF-8):   Dokumentacja do JAXP
+Summary(pl.UTF-8):	Dokumentacja do JAXP
 Group:		Development/Languages/XML/Java
 
 %description doc
